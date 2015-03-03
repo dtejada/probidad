@@ -1,13 +1,100 @@
+.navbar {
+	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+	background-color: #000;
+	min-height: 70px;
+	font-size: 20px;
+	padding-top: 8px;
+	border-color: #000;
+	color: #fff;
+}
+
+.navbar-brand {
+	font-size: 30px;
+	padding-top: 5px;
+}
+
 .sub-brand {
-	color: grey;
-	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	color: #e5e5e5;
+	font-size: 15px;
+	float: right; 
+	margin-top: 23px;
+	margin-left: -100px;
+}
+
+body {
+	background-color: #4A81EE;
 }
 
 .title-header {
 	text-align: center;
 	h2, h3 {
 		font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+		position: relative;
+		margin-top: 40px;
+		padding: 24px 0;
 	}
+}
+
+.ribbon {
+	background: url(../img/cinta-probidad.png);
+	background: url(../img/cinta-probidad.png) no-repeat;
+	width: 600px;
+	height: 130px;
+	margin: 0px auto;
+}
+
+.row {
+	margin-right: -200px;
+	margin-left: 0px;
+}
+
+h2 {
+font-size: 51px;
+font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+color: #e5e5e5;
+}
+
+h3 {
+font-size: 45px;
+font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+font-weight: 100;
+color: #e5e5e5;
+margin-bottom: 60px;
+}
+
+.accordion-group {
+border-radius: 5px;
+margin: 0 0 10px 0;
+padding: 0;
+overflow: hidden;
+}
+
+.accordion {
+background: #efefef;
+padding: 20px 40px;
+overflow: hidden;
+}
+
+.accordion-heading {
+display: block;
+position: relative;
+min-height: 4rem;
+}
+
+.accordion-title {
+min-height: 4rem;
+margin: 0;
+padding: 0.5rem 4rem 0 9rem;
+font-size: 1.8rem;
+line-height: 3rem;
+color: #222222;
+}
+
+
+
+.fa.pull-right {
+margin-left: .3em;
 }
 
 .banner-footer {
@@ -28,7 +115,7 @@ footer {
 	a {
 		color: red;
 	} 
-	.footer-info {
+.footer-info {
 		padding-top: 40px;
-	}
+}
 }

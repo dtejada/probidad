@@ -4,24 +4,55 @@ layout: default
 
 <div class="container">
 	<div class="title-header">
-		<h2> Frase Marquetera </h2>
-		<h3> Bajada Marquetera </h3>
+		<div class="ribbon"><h2> Con una nueva Ley de Probidad </h2></div>
+		<h3> promovemos la transparencia y evitamos los conflictos de interés </h3>
 	</div>
+
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Qué es Probidad?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body" style="display: none;">
+						        	<p>Esto se debería desplegar</p>
+						        </div>
+						    </li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Qué son datos abiertos?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body" style="display: none;">
+						        	<p>...</p>
+						        </div>
+						    </li>
+						</ul>
+					</div>
+
 	<div class="row">
 		 {% for person in site.persons %}
-	  <div class="col-sm-6 col-md-4">
-	    <div class="thumbnail">
-	      <img src="{{ person.img }} " alt="{{ person.name }} ">
-	      <div class="caption">
-	        <h3>{{ person.name }} </h3>
-	        <p>...</p>
-	        <a target="_blank" href="{{ person.twitter_url }}&text=Otra frase marquetera"><i class="fa fa-twitter"></i> Twitteale</a>
-	      </div>
-	    </div>
-	  </div>
+		  <div class="col-sm-6 col-md-2">
+		    <div class="thumbnail">
+		      <img src="{{ person.img }} " alt="{{ person.name }} ">
+		      <div class="caption">
+		        <h4>{{ person.name }} </h4>
+		        <a target="_blank" href="{{ person.twitter_url }}&text=Otra frase marquetera"><i class="fa fa-twitter"></i> Twitteale</a>
+		      </div>
+		    </div>
+		  </div>
 	   {% endfor %}
 	</div>
 </div>
+
+
+<iframe src="http://candideit.org/dtejada/test-de-probidad-que-tan-probo-eres/medianaranja/embeded" style="width:1250px;" height="522" frameborder="0" scrolling="no"> </iframe>
 
 <div class="banner-footer">
 	<div class="container">
