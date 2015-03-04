@@ -1,16 +1,66 @@
+
+body {
+	background-color: #224383;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    color: #FFFFFF;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 46px;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 600;
+	color: #FFFFFF;
+	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+}
+
+h4 {
+	color: #1C3973;
+	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+	font-size: 24px;
+	margin: 3px 0 18px;
+}
+
+/*NAV*/
+
 .navbar {
 	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-	background-color: #000;
+	background-color: #1C3973;
 	min-height: 70px;
 	font-size: 20px;
 	padding-top: 8px;
-	border-color: #000;
+	border-color: rgba(0, 0, 0, 0);
 	color: #fff;
 }
 
 .navbar-brand {
 	font-size: 30px;
 	padding-top: 5px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #FFFFFF;
+	padding: 9px 13px;
+	border-radius: 3px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	background-color: #112D64;
+}
+
+ul.nav.navbar-nav.navbar-right {
+	margin-top: 7px;
 }
 
 .sub-brand {
@@ -20,77 +70,95 @@
 	float: right; 
 	margin-top: 23px;
 	margin-left: -100px;
+	font-weight: 100;
 }
 
-body {
-	background-color: #4A81EE;
+.navbar-inverse .navbar-brand {
+	color: #FFFFFF;
+	font-weight: 600;
+}
+/*RIBBON*/
+
+.ribbon {
+	max-width: 800px;
+	background: #4A81EE;
+	margin: 70px auto 100px;
+	padding: 20px 0 30px;
+	position: relative;
 }
 
-.title-header {
+.ribbon:before {
+	content: url(../img/ribbon-before.png);
+	position: absolute;
+	bottom: -40px;
+	left: -57px;
+}
+
+.ribbon:after {
+	content: url(../img/ribbon-after.png);
+	position: absolute;
+	bottom: -40px;
+	right: -56px;
+}
+
+#title-header {
 	text-align: center;
 	h2, h3 {
-		font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
 		position: relative;
-		margin-top: 40px;
-		padding: 24px 0;
+		margin: 0;
 	}
 }
 
-.ribbon {
-	background: url(../img/cinta-probidad.png);
-	background: url(../img/cinta-probidad.png) no-repeat;
-	width: 600px;
-	height: 130px;
-	margin: 0px auto;
+/*PERSONS*/
+
+@media screen and (min-width: 992px) {
+	.col-md-2 {
+		width: 20%;
+	}
 }
 
-.row {
-	margin-right: -200px;
-	margin-left: 0px;
+.caption {
+	text-align: center;
 }
 
-h2 {
-font-size: 51px;
-font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-color: #e5e5e5;
+.caption a {
+	background: #4A81EE;
+	color: #fff;
+	padding: 7px;
+	border-radius: 3px;
 }
 
-h3 {
-font-size: 45px;
-font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-font-weight: 100;
-color: #e5e5e5;
-margin-bottom: 60px;
+.caption a:hover {
+	background: #4AC2EE;
+	text-decoration: none;
 }
 
-.accordion-group {
-border-radius: 5px;
-margin: 0 0 10px 0;
-padding: 0;
-overflow: hidden;
+/*PREGUNTAS*/
+
+.preguntas a {
+	width: 100%;
+	padding: 10px 0px 20px;
 }
 
-.accordion {
-background: #efefef;
-padding: 20px 40px;
-overflow: hidden;
+.btn-primary {
+	background-color: #4A81EE;
+	border-color: rgba(46, 109, 164, 0);
 }
 
-.accordion-heading {
-display: block;
-position: relative;
-min-height: 4rem;
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #4AC2EE;
+	border-color: rgba(23, 55, 82, 0);
 }
 
-.accordion-title {
-min-height: 4rem;
-margin: 0;
-padding: 0.5rem 4rem 0 9rem;
-font-size: 1.8rem;
-line-height: 3rem;
-color: #222222;
+.preguntas.col-md-6.col-sm-12 {
+	margin: 10px 0 40px;
 }
 
+.well {
+	background: #1C3973;
+	color: #fff;
+	border: none;
+}
 
 
 .fa.pull-right {
@@ -108,14 +176,11 @@ margin-left: .3em;
 }
 
 footer {
-	background-color: #000;
+	background-color: #1C3973;
 	color: #fff;
-	min-height: 220px;
-	padding-top: 20px;
-	a {
-		color: red;
-	} 
+	min-height: 140px;
+	padding-top: 50px;
 .footer-info {
-		padding-top: 40px;
+		padding-top: 16px;
 }
 }

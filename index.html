@@ -3,62 +3,33 @@ layout: default
 ---
 
 <div class="container">
-	<div class="title-header">
-		<div class="ribbon"><h2> Con una nueva Ley de Probidad </h2></div>
-		<h3> promovemos la transparencia y evitamos los conflictos de interés </h3>
-	</div>
+	<section id="title-header" class="row">
+		<div class="ribbon">
+			<h2> Con una nueva Ley de Probidad </h2>
+			<h3> promovemos la transparencia y evitamos los conflictos de interés </h3>
+		</div>
+	</section>
 
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Qué es Probidad?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body" style="display: none;">
-						        	<p>Esto se debería desplegar</p>
-						        </div>
-						    </li>
-						</ul>
-					</div>
+	<section id="persons" class="row">
+		<h3>Twitteale a los miembros de la comisión para que aprueben la Ley de Probidad.</h3>
+			 {% for person in site.persons %}
+			<div class="col-md-2 col-sm-6">
+			    <div class="thumbnail">
+			      <img src="{{ person.img }} " alt="{{ person.name }} ">
+			      <div class="caption">
+			        <h4>{{ person.name }} </h4>
+			        <a target="_blank" href="{{ person.twitter_url }}&text=Otra%20frase%20marquetera"><i class="fa fa-twitter"></i> Twitteale</a>
+			      </div>
+			    </div>
+			  </div>
+		   {% endfor %}
+	</section>
 
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Qué son datos abiertos?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body" style="display: none;">
-						        	<p>...</p>
-						        </div>
-						    </li>
-						</ul>
-					</div>
-
-	<div class="row">
-		 {% for person in site.persons %}
-		  <div class="col-sm-6 col-md-2">
-		    <div class="thumbnail">
-		      <img src="{{ person.img }} " alt="{{ person.name }} ">
-		      <div class="caption">
-		        <h4>{{ person.name }} </h4>
-		        <a target="_blank" href="{{ person.twitter_url }}&text=Otra%20frase%20marquetera"><i class="fa fa-twitter"></i> Twitteale</a>
-		      </div>
-		    </div>
-		  </div>
-	   {% endfor %}
-	</div>
+		<section id="faq" class="row">
+			{% include accordion.html %}
+		</section>
 
 	<div>
 		<iframe src="http://candideit.org/dtejada/test-de-probidad-que-tan-probo-eres/medianaranja/embeded" style="width: 100%; height: 632px;" height="800" frameborder="0" scrolling="no"> </iframe>
-	</div>
-</div>
-
-
-
-<div class="banner-footer">
-	<div class="container">
-		<h4>Frase del banner</h4>
 	</div>
 </div>
