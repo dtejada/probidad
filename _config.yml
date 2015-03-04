@@ -5,9 +5,10 @@ phone: +56224192770
 address: "Holanda 895, Providencia, Santiago"
 developedby: "Ciudadano Inteligente"
 description: Chile necesita una Ley de Probidad ahora.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "http://leydeprobidad.cl" # the subpath of your site, e.g. /blog/
 url: "http://leydeprobidad.cl" # the base hostname & protocol for your site
-twitter_username: ciudadanoi
+twitter_username: '@ciudadanoi'
+analytics: UA-60348478-1
 
 # Build settings
 markdown: kramdown
