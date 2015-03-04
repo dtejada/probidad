@@ -11,11 +11,19 @@ body {
 	margin: 0 auto;
 }
 
-h2 {
-	font-size: 46px;
+h1 {
+	font-size: 61px;
 	color: #FFFFFF;
 	font-weight: 600;
 	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 40px;
+	color: #FFFFFF;
+	font-weight: 200;
+	font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+	margin: 30px 0;
 }
 
 h3 {
@@ -103,7 +111,7 @@ ul.nav.navbar-nav.navbar-right {
 
 #title-header {
 	text-align: center;
-	h2, h3 {
+	h1, h3 {
 		position: relative;
 		margin: 0;
 	}
@@ -180,6 +188,7 @@ footer {
 	color: #fff;
 	min-height: 140px;
 	padding-top: 50px;
+	margin-top: 50px;
 .footer-info {
 		padding-top: 16px;
 }
